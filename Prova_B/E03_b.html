@@ -7,11 +7,14 @@
     */
 
     //ENTRADA
-
+    const precoGarrafa = Number(prompt("Qual o preco da garrafa de agua?"))
 
     //PROCESSAMENTO
-
+    const gasto2Anos = (precoGarrafa * 7) * 730;
+    const litros = (600 * 1000) * 730;
 
     //SAÍDA
+    document.write (`O gasto total dos dois anos sera de R$${gasto2Anos.toFixed(2).replace(".",",")}.
+    E o total de litros tomados sera de ${litros}L.`)
 
 </script>

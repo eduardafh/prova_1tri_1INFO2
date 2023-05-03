@@ -7,11 +7,14 @@
     */
 
     //ENTRADA
-
+    const irmao1 = Number (prompt ("Quantos litros o primeiro irmao toma diariamente?"))
+    const irmao2 = Number (prompt ("Quantos litros o segundo irmao toma diariamente?"))
+    const irmao3 = Number (prompt ("Quantos litros o terceiro irmao toma diariamente?"))
 
     //PROCESSAMENTO
-
+    const media = (irmao1 + irmao2 + irmao3) /3;
 
     //SAÍDA
+    document.write (`A media de litros agua tomada pelos tres irmaos é de: ${media.toFixed(2)}L.`)
 
 </script>

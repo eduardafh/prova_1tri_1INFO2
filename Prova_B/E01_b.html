@@ -7,11 +7,15 @@
     */
 
     //ENTRADA
-
+    const avaliacaoUm = Number (prompt("Qual era o peso da primeira avaliacao?"));
+    const avaliacaoDois = Number (prompt("Qual o peso da segunda avaliacao?"));
+    const notaUm = Number (prompt("Quanto o aluno tirou na primeira avaliacao?").replace(",","."));
+    const notaDois = Number (prompt("Quanto o aluno tirou na segunda avaliacao?").replace(",","."));
 
     //PROCESSAMENTO
-
+    const mediaFinal = (notaUm/avaliacaoUm) + (notaDois/avaliacaoDois)
 
     //SAÍDA
+    document.write (`A media final sera de: ${mediaFinal.toFixed(1).replace(".",",")}`)
 
 </script>
